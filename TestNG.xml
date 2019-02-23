@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BDD Test Suite" verbose="1" parallel="tests" thread-count="1" configfailurepolicy="continue">
+    <test name="All Practice Test" annotations="JDK" preserve-order="true">
+    	<parameter name = "browser" value = "Chrome" />
+    	<parameter name = "Env" value = "QA" />
+    	<parameter name = "url" value = "https://investor.vanguard.com/home/" />
+    	<parameter name = "Uid" value = "Anowar" />
+    	<parameter name = "Pwd" value = "Ullah" />
+    	<parameter name = "" value = "" />
+    
+        <classes>
+            <!--class name="TestRunner"/-->
+            <class name="practiceTestNG.DataProviderTest"/>
+            <class name="practiceTestNG.ParameterTest"/>
+            <class name="practiceTestNG.GoogleTest"/>
+            
+        </classes>
+    </test>
+</suite>

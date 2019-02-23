@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [BDD Test Suite]" parallel="tests">
+  <test thread-count="1" name="All Practice Test(failed)" parallel="tests">
+    <parameter name="" value=""/>
+    <parameter name="Uid" value="Anowar"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="Env" value="QA"/>
+    <parameter name="Pwd" value="Ullah"/>
+    <parameter name="url" value="https://investor.vanguard.com/home/"/>
+    <classes>
+      <class name="practiceTestNG.GoogleTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterTest"/>
+          <include name="tearDown"/>
+          <include name="googleTitleTest"/>
+        </methods>
+      </class> <!-- practiceTestNG.GoogleTest -->
+    </classes>
+  </test> <!-- All Practice Test(failed) -->
+</suite> <!-- Failed suite [BDD Test Suite] -->
